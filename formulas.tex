@@ -1,0 +1,25 @@
+\chapter{How to write formulas}
+
+In a thesis, Equations and formulas are useful to formalize a concept, and are essential in an engineering thesis. Nevertheless, it is important to understand when they need to be used and when they can be skipped for a less formal explanation of a concept. Moreover, some guidelines shall be followed.
+
+First, better follow the general formalism from your community, usually signal processing and math. Vectors are defined in lowercase bold letters ($\mathbf{x}$, {\bs}mathbf\{x\}), matrices in uppercase bold letters ($\mathbf{A}$, {\bs}mathbf\{A\}); the module of a complex number is given by $|\dot |$ and does not need explanation nor definition; the Real and Imaginary parts of a complex number use the symbol $\Re$ ({\bs}Re) and $\Im$ ({\bs}Im) respectively. 
+
+Formulas belong to text, and the punctuation must be chosen accordingly. For example, we know that a sum is defined as 
+$$
+z=x+y.
+$$
+What we may not know is that the previous sentence was finished, hence I added a period after $y$. If instead we are talking of several formulas, like multiplication
+$$
+z=x \cdot y
+$$
+and division
+$$
+z=x/y,
+$$
+we may add a comma to start this new part of the sentence. That easy, but always check if your formulas are well inserted in the text.
+
+Try to be as most semantic as you can when using an index: a good rule of thumb is to try to use initials of the variables as symbols, if you can. For example $t$ is used as time index, and if you need another one, $\tau$ may be a good replacement. If you have an index for feature component, $f$ is a good candidate; if you need to think of two indices, $i$ and $j$ are the most intuitive symbols.
+
+The formalism you choose should be as most uniform as possible during your thesis. If $x$ is a generic audio signal, it cannot be also the vector of features extracted by such signal. Be careful also on how you use related letters, if they are not semantically related. For example, we cannot use $\mathbf{M} \in \mathbb{R}^{M \times N}$, because we are using the same $M$ as a matrix and as a dimension of the matrix. On the other say, using $\mathbf{x}$ as the feature representation of the generic audio signal $x$ is fair, since the two are semantically related.
+
+The correct way to list the dimensions of a matrix is: $\mathbf{M} \in \mathbb{R}^{M \times N}$ ({\bs}mathbf\{X\} {\bs}in {\bs}mathbb\{R\} \^{}   \{N {\bs}times P\}), using {\bs}times.

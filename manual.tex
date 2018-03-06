@@ -1,0 +1,56 @@
+%-------------------------%
+%-----Document Setup------%
+%-------------------------%
+\documentclass[ebook,11pt,oneside,openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+%\usepackage{savetrees}
+\usepackage{amssymb}
+\usepackage{verbatim}
+
+\def\bs{\textbackslash}
+
+
+\linespread{1.6}
+\setlength{\footskip}{20pt}
+
+%-------------------------%
+%------Document Code------%
+%-------------------------%
+\newcommand{\thought}[1]{\textit{#1}}
+
+\newcommand{\scenechange}{
+  \par
+  \vspace{\baselineskip}
+  \par
+\noindent}
+%Creates a line break for a change of scene
+
+\newcommand{\majorchange}{
+  \par
+  \vspace{\baselineskip}
+  \hfill
+  \textasteriskcentered
+  \hfill
+  \vspace{\baselineskip}
+\noindent}
+%creates a major line break, split by an asterisk for scene changes at the end of a page of where a sense of a major change is required. 
+
+%-------------------------%
+%------Main Document------%
+%-------------------------%
+\begin{document}
+\title{Best practices (and common mistakes) in writing a thesis}
+\author{Michele Buccoli}
+\date{}
+\maketitle
+
+\section*{}
+\input{formulas.tex}
+\input{grammar.tex}
+\input{organization.tex}
+\input{sota.tex}
+
+%add additional sections by creating new section#.tex files and copying the two lines above. You can number sections (remove the asterisks) or name them (in the curly braces) or even use chapters instead. Ooo, and don't forget you can do parts too!
+
+\end{document}
